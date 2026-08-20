@@ -34,11 +34,9 @@ docs/               Notes, writeups
 images/             Photos, screenshots, renders
 ```
 
-**Note on `web-dashboard/`:** the dashboard's HTML/CSS/JS currently lives as a single string served directly from `firmware/web_server.cpp`, not as standalone files in this folder. If picking this project back up, pulling that out into real `.html`/`.css`/`.js` files served via `SPIFFS`/`LittleFS` would be a natural next step — it's on the list of architectural improvements below.
-
----
-
 ## Firmware architecture
+
+It uses dual I2C buses for driving 2 OLED screens with same addresses. 
 
 The firmware went through one real architectural rewrite worth documenting, because it's the actual lesson from this project.
 
