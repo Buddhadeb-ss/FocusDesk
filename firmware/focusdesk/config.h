@@ -44,5 +44,5 @@
 // WiFi
 // ====================================================
 
-#define WIFI_SSID "iQOO Z9 5G"
-#define WIFI_PASSWORD "focusedwork"
+#define WIFI_SSID "WIFI_ID"
+#define WIFI_PASSWORD "WIFI_PASS"
